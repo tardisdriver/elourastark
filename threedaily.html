@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <title>Eloura Stark - UX Designer/Researcher</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-  </head>
-    </head>
-    <body>
-        <header>
-            <div class="title">PixelPathAdventures.com</div>
-            <div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Eloura Stark - UX Designer/Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const mobileNav = document.querySelector('.mobileNav img');
+    const navOverlay = document.querySelector('.navOverlay');
+    const closeBtn = navOverlay.querySelector('img');
+
+    mobileNav.addEventListener('click', function() {
+        navOverlay.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', function() {
+        navOverlay.style.display = 'none';
+    });
+});
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center; gap: 40px">
+            <div class="mobileNav">
+                <img src="assets/bars-solid.svg" height="30px" onClick="" />
+            </div>
+            <div class="navOverlay">
+                <img src="assets/xmark-solid.svg" height="50px" onClick="" />
                 <span><a href="index.html">Home</a></span>
                 <span><a href="portfolio.html">Portfolio</a></span>
                 <span><a href="about.html">About</a></span>
                 <span><a href="contact.html">Contact</a></span>
             </div>
-        </header>
+            <div class="title">PixelPathAdventures.com</div>
+        </div>
+        <nav>
+            <div class="fullNav">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="portfolio.html">Portfolio</a></span>
+                <span><a href="about.html">About</a></span>
+                <span><a href="contact.html">Contact</a></span>
+            </div>
+        </nav>
+    </header>
       <main>
         <div style="display: flex; flex-direction: column; align-items: center; gap: 20px">
         <h1>ThreeDaily</h1>
