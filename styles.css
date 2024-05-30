@@ -100,7 +100,7 @@ header {
 
   @media screen and (max-width: 800px){
     .mainTitle {
-        font-size: 0.8em !important;
+        font-size: 0.75em !important;
     }
     .title {
         font-size: 1em;
@@ -156,5 +156,15 @@ header {
       .projectContainer {
         justify-content: center;
         margin: auto;
+        width: 80%;
+      }
+
+      .projectImgContainer {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .projectImgContainer > div > img {
+        height: 220px;
       }
   }
