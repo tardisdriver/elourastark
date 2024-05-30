@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    padding: 30px;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+  }
+  
+  .title {
+    font-family: "Press Start 2P", system-ui;
+  }
+  
+
+ a, a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  
+  .mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .mainContainer > h2 {
+    font-family: "Press Start 2P", system-ui;
+  }
+  
+  .mainLeft {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .portrait {
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+  }
+  
+  .projectContainer {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .project {
+    height: 310px;
+    width: 370px;
+    border: 1px solid grey;
+
+  }
+
+  .project > h3 {
+    padding: 5px;
+  }
+
+  .project > p {
+    padding: 5px;
+  }
+
+  .projectImgContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
