@@ -99,6 +99,9 @@ header {
   }
 
   @media screen and (max-width: 800px){
+    .mainTitle {
+        font-size: 0.8em !important;
+    }
     .title {
         font-size: 1em;
     }
@@ -116,8 +119,8 @@ header {
         left: 0;
         width: 70%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 50px 30px;
         font-size: 2.3em;
         display: none; /* Initially hidden */
         flex-direction: column;
@@ -139,6 +142,10 @@ header {
         flex-direction: column;;
     }
 
+    .mainLeft {
+        width: 80%;
+    }
+
     .portrait {
         border-radius: 50%;
         height: 15em;
@@ -148,5 +155,6 @@ header {
 
       .projectContainer {
         justify-content: center;
+        margin: auto;
       }
   }
