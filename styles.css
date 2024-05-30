@@ -18,7 +18,7 @@ header {
     top: 0;
   }
   
-  .title {
+  .title, .mainTitle {
     font-family: "Press Start 2P", system-ui;
   }
   
