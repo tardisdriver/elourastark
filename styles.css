@@ -99,6 +99,9 @@ header {
   }
 
   @media screen and (max-width: 800px){
+    .title {
+        font-size: 1em;
+    }
     .fullNav {
         display: none;
     }
@@ -111,7 +114,7 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        width: 50%;
+        width: 70%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.6);
         padding: 30px;
@@ -120,6 +123,7 @@ header {
         flex-direction: column;
         align-items: flex-start;
         gap: 50px;
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         border-right: 2px solid grey;
     }
@@ -132,12 +136,14 @@ header {
 
     .mainContainer {
         padding: 0;
+        flex-direction: column;;
     }
 
     .portrait {
         border-radius: 50%;
         height: 15em;
         width: 15em;
+        margin-top: 20px;
       }
 
       .projectContainer {
