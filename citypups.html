@@ -14,25 +14,25 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Press+Start+2P&display=swap"
         rel="stylesheet">
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    const mobileNav = document.querySelector('.mobileNav img');
-    const navOverlay = document.querySelector('.navOverlay');
-    const closeBtn = navOverlay.querySelector('img');
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileNav = document.querySelector('.mobileNav img');
+            const navOverlay = document.querySelector('.navOverlay');
+            const closeBtn = navOverlay.querySelector('img');
 
-    mobileNav.addEventListener('click', function() {
-        navOverlay.style.display = 'flex';
-    });
+            mobileNav.addEventListener('click', function () {
+                navOverlay.style.display = 'flex';
+            });
 
-    closeBtn.addEventListener('click', function() {
-        navOverlay.style.display = 'none';
-    });
-});
+            closeBtn.addEventListener('click', function () {
+                navOverlay.style.display = 'none';
+            });
+        });
 
     </script>
 </head>
 
 <body>
-    <header>
+    <header style="display: flex; align-items:center;">
         <div style="display: flex; align-items: center; gap: 40px">
             <div class="mobileNav">
                 <img src="assets/bars-solid.svg" height="30px" onClick="" />
@@ -40,7 +40,13 @@
             <div class="navOverlay">
                 <img src="assets/xmark-solid.svg" height="50px" onClick="" />
                 <span><a href="index.html">Home</a></span>
-                <span><a href="portfolio.html">Portfolio</a></span>
+                <span><a href="portfolio.html" class="portfolio-link">Portfolio</a></span>
+                <div class="dropdown-menu">
+                    <span><a href="gamelux.html">GameLux</a></span>
+                    <span><a href="citypups.html">CityPups</a></span>
+                    <span><a href="subhub.html">$ubHub</a></span>
+                    <span><a href="threedaily.html">ThreeDaily</a></span>
+                </div>
                 <span><a href="about.html">About</a></span>
                 <span><a href="contact.html">Contact</a></span>
             </div>
@@ -49,44 +55,99 @@
         <nav>
             <div class="fullNav">
                 <span><a href="index.html">Home</a></span>
-                <span><a href="portfolio.html">Portfolio</a></span>
+                <div class="portfolio-dropdown">
+                    <span><a href="portfolio.html" class="portfolio-link">Portfolio</a></span>
+                    <div class="dropdown-menu">
+                        <span><a href="gamelux.html">GameLux</a></span>
+                        <span><a href="citypups.html">CityPups</a></span>
+                        <span><a href="subhub.html">$ubHub</a></span>
+                        <span><a href="threedaily.html">ThreeDaily</a></span>
+                    </div>
+                </div>
                 <span><a href="about.html">About</a></span>
                 <span><a href="contact.html">Contact</a></span>
             </div>
         </nav>
     </header>
-      <main>
+    <main>
         <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 50px">
-        <h1 class="title">CityPups</h1>
-        <p>
-            This was a Design Sprint Concept of a Website trying to help users find their forever fur friend, however, they were having difficulty with users in larger cities, which was their primary user base.
-        </p>
-        <a href="https://www.figma.com/design/l13KiJCHBM54avDHqWxrMh/CityPups-Case-Study?node-id=0-1&t=3T9yuaccL7Xxz6yd-1"
-        target="_blank" class="figmaButton">
-        View me on <img src="assets/figmalogo.svg" style="width:20px; margin-left: 10px; margin-right: 5px;" />
-        Figma
-    </a>
-        <div class="projectImgContainer">
-            <div>
-                <img src="assets/citypups1.png" />
+            <h1 class="title">CityPups</h1>
+            <p>
+                This was a Design Sprint Concept of a Website trying to help users find their forever fur friend,
+                however, they were having difficulty with users in larger cities, which was their primary user base.
+            </p>
+            <div style="width: 420px; display: flex; gap: 10px">
+                <a href="https://www.figma.com/design/l13KiJCHBM54avDHqWxrMh/CityPups-Case-Study?node-id=0-1&t=3T9yuaccL7Xxz6yd-1"
+                    target="_blank" class="figmaButton">
+                    View me on <img src="assets/figmalogo.svg" style="width:20px; margin-left: 10px; margin-right: 5px;" />
+                    Figma
+                </a>
+                <a href="https://www.figma.com/design/N4u8STtBNW01hekqOfHF4E/CityPups?node-id=0-1&t=v5PiKaS7NuXlPF8Q-0"
+                    target="_blank" class="prototypeButton" style="padding:0">
+                    <div>View prototype</div>
+                </a>
             </div>
-            <div>
-                <img src="assets/citypups2.png" />
+            <div style="width: 100%">
+                <div class="portImgContainer">
+                    <div class="portImgLabel">
+                        <h2>Home Page</h2>
+                        <div class="portImgLabelText">
+                           
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <img src="assets/CityPupsDesigns1.png" style="width: 90%" />
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="assets/citypups3.png" />
+            <div style="margin-top: 20px; width: 100%">
+                <div class="portImgContainer">
+                    <div class="portImgLabel">
+                        <h2 style="text-align: center">Dog Profile</h2>
+                        <div class="portImgLabelText">
+                           
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <img src="assets/CityPupsDesigns2.png" style="width: 90%" />
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="assets/citypups4.png" />
-            </div><div>
-                <img src="assets/citypups5.png" />
-            </div><div>
-                <img src="assets/citypups6.png" />
+            <div style="margin-top: 20px; width: 100%">
+                <div class="portImgContainer">
+                    <div class="portImgLabel">
+                        <h2 style="text-align: center">Dog Application</h2>
+                        <div class="portImgLabelText">
+                            
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <img src="assets/CityPupsDesigns3.png" style="width: 90%" />
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px; width: 100%">
+                <div class="portImgContainer">
+                    <div class="portImgLabel">
+                        <h2 style="text-align: center">Distance Filter</h2>
+                        <div class="portImgLabelText">
+                            
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <img src="assets/CityPupsDesigns4.png" style="width: 90%" />
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-      </main>
-        
-        
-    </body>
+       
+    </main>
+
+
+</body>
+
 </html>

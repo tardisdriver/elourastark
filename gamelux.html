@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <header>
+    <header style="display: flex; align-items:center;">
         <div style="display: flex; align-items: center; gap: 40px">
             <div class="mobileNav">
                 <img src="assets/bars-solid.svg" height="30px" onClick="" />
@@ -40,7 +40,13 @@
             <div class="navOverlay">
                 <img src="assets/xmark-solid.svg" height="50px" onClick="" />
                 <span><a href="index.html">Home</a></span>
-                <span><a href="portfolio.html">Portfolio</a></span>
+                <span><a href="portfolio.html" class="portfolio-link">Portfolio</a></span>
+                <div class="dropdown-menu">
+                    <span><a href="gamelux.html">GameLux</a></span>
+                    <span><a href="citypups.html">CityPups</a></span>
+                    <span><a href="subhub.html">$ubHub</a></span>
+                    <span><a href="threedaily.html">ThreeDaily</a></span>
+                </div>
                 <span><a href="about.html">About</a></span>
                 <span><a href="contact.html">Contact</a></span>
             </div>
@@ -49,7 +55,15 @@
         <nav>
             <div class="fullNav">
                 <span><a href="index.html">Home</a></span>
-                <span><a href="portfolio.html">Portfolio</a></span>
+                <div class="portfolio-dropdown">
+                    <span><a href="portfolio.html" class="portfolio-link">Portfolio</a></span>
+                    <div class="dropdown-menu">
+                        <span><a href="gamelux.html">GameLux</a></span>
+                        <span><a href="citypups.html">CityPups</a></span>
+                        <span><a href="subhub.html">$ubHub</a></span>
+                        <span><a href="threedaily.html">ThreeDaily</a></span>
+                    </div>
+                </div>
                 <span><a href="about.html">About</a></span>
                 <span><a href="contact.html">Contact</a></span>
             </div>
@@ -58,33 +72,49 @@
     <main>
         <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 50px;">
             <h1 class="title">GameLux</h1>
-            <p>
-                GameLux was a Gaming Console Concept I had that would be a competitor to Microsoft’s XBox and Sony’s
+            <p style="max-width: 65%">
+                GameLux is a Gaming Console Concept I had that would be a competitor to Microsoft’s XBox and Sony’s
                 PlayStation. I had a lot of fun and learned so much from this project.
             </p>
-            <a href="https://www.figma.com/design/pocijeOq9X4YRSk1vo6SvZ/Case-Study-GameLux?node-id=0-1&t=QZBHUzO4VlQI8tjw-1"
+           
+            <div style="width: 420px; display: flex; gap: 10px">
+                <a href="https://www.figma.com/design/pocijeOq9X4YRSk1vo6SvZ/Case-Study-GameLux?node-id=0-1&t=QZBHUzO4VlQI8tjw-1"
                 target="_blank" class="figmaButton">
                 View me on <img src="assets/figmalogo.svg" style="width:20px; margin-left: 10px; margin-right: 5px;" />
                 Figma
             </a>
-            <div class="projectImgContainer">
-                <div>
-                    <img src="assets/gamelux1.png" />
+                <a href="https://www.figma.com/design/1A9TWehrHqYm0qQW9Bb0X1/GameLux-HF-Prototype?node-id=0-1&t=LGXfEDUXQ3gz5UiA-0"
+                    target="_blank" class="prototypeButton" style="padding:0">
+                    <div>View prototype</div>
+                </a>
+            </div>
+            <div style="margin-top: 20px; width: 100%">
+                <div class="portImgLabel" style="margin-bottom: 20px">
+                    <h2 style="text-align: center">Lo-Fi Mocks</h2>
+                    <div class="portImgLabelText"> 
+                    </div>  
                 </div>
-                <div>
-                    <img src="assets/gamelux2.png" />
+                <div class="portImgContainer">
+                    <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap">
+                        <img src="assets/GameLuxLofi1.png" style="width: 40%" />
+                        <img src="assets/GameLuxLofi2.png" style="width: 40%" />
+                        <img src="assets/GameLuxLofi3.png" style="width: 40%" />
+                    </div>
                 </div>
-                <div>
-                    <img src="assets/gamelux3.png" />
+            </div>
+            <div style="margin-top: 20px; width: 100%">
+                <div class="portImgLabel" style="margin-bottom: 20px">
+                    <h2 style="text-align: center">Hi-Fi Mocks</h2>
+                    <div class="portImgLabelText"> 
+                    </div>  
                 </div>
-                <div>
-                    <img src="assets/gamelux4.png" />
-                </div>
-                <div>
-                    <img src="assets/gamelux5.png" />
-                </div>
-                <div>
-                    <img src="assets/gamelux6.png" />
+                <div class="portImgContainer">
+                    <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap">
+                        <img src="assets/GameLuxHifi1.png" style="width: 40%" />
+                        <img src="assets/GameLuxHifi2.png" style="width: 40%" />
+                        <img src="assets/GameLuxHifi3.png" style="width: 40%" />
+                        <img src="assets/GameLuxHifi4.png" style="width: 40%" />
+                    </div>
                 </div>
             </div>
         </div>

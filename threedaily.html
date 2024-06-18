@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <header>
+    <header style="display: flex; align-items:center;">
         <div style="display: flex; align-items: center; gap: 40px">
             <div class="mobileNav">
                 <img src="assets/bars-solid.svg" height="30px" onClick="" />
@@ -40,7 +40,13 @@
             <div class="navOverlay">
                 <img src="assets/xmark-solid.svg" height="50px" onClick="" />
                 <span><a href="index.html">Home</a></span>
-                <span><a href="portfolio.html">Portfolio</a></span>
+                <span><a href="portfolio.html" class="portfolio-link">Portfolio</a></span>
+                <div class="dropdown-menu">
+                    <span><a href="gamelux.html">GameLux</a></span>
+                    <span><a href="citypups.html">CityPups</a></span>
+                    <span><a href="subhub.html">$ubHub</a></span>
+                    <span><a href="threedaily.html">ThreeDaily</a></span>
+                </div>
                 <span><a href="about.html">About</a></span>
                 <span><a href="contact.html">Contact</a></span>
             </div>
@@ -49,7 +55,15 @@
         <nav>
             <div class="fullNav">
                 <span><a href="index.html">Home</a></span>
-                <span><a href="portfolio.html">Portfolio</a></span>
+                <div class="portfolio-dropdown">
+                    <span><a href="portfolio.html" class="portfolio-link">Portfolio</a></span>
+                    <div class="dropdown-menu">
+                        <span><a href="gamelux.html">GameLux</a></span>
+                        <span><a href="citypups.html">CityPups</a></span>
+                        <span><a href="subhub.html">$ubHub</a></span>
+                        <span><a href="threedaily.html">ThreeDaily</a></span>
+                    </div>
+                </div>
                 <span><a href="about.html">About</a></span>
                 <span><a href="contact.html">Contact</a></span>
             </div>
@@ -61,29 +75,47 @@
         <p>
             This was an Internship Program I worked on with a team and clients.  It originally started as a website, but they wanted to go in the direction of an app in order to succeed and fullfuill their users better.  We had 5 weeks to work on this program
         </p>
+        
+    <div style="width: 420px; display: flex; gap: 10px">
         <a href="https://www.figma.com/design/asWdGIWt2woyJvmDDqXEoa/IDP-Case-Study?node-id=0-1&t=VVVdrPlbJtMHdkSC-1"
         target="_blank" class="figmaButton">
         View me on <img src="assets/figmalogo.svg" style="width:20px; margin-left: 10px; margin-right: 5px;" />
         Figma
     </a>
-        <div class="projectImgContainer">
-            <div>
-                <img src="assets/threedaily1.png" />
-            </div>
-            <div>
-                <img src="assets/threedaily2.png" />
-            </div>
-            <div>
-                <img src="assets/threedaily3.png" />
-            </div>
-            <div>
-                <img src="assets/threedaily4.png" />
-            </div><div>
-                <img src="assets/threedaily5.png" />
-            </div><div>
-                <!-- <img src="assets/threedaily6.png" /> -->
+        <a href="https://www.figma.com/design/dGF6ODRMzO9vGP3F57hV25/ThreeDaily-Designs-(Copy)?node-id=89-6528&t=KN01ddTdb3JvvIbh-0"
+            target="_blank" class="prototypeButton" style="padding:0">
+            <div>View prototype</div>
+        </a>
+    </div>
+    <div style="margin-top: 20px; width: 100%">
+        <div class="portImgLabel" style="margin-bottom: 20px">
+            <h2 style="text-align: center">Lo-Fi Mocks</h2>
+            <div class="portImgLabelText"> 
+            </div>  
+        </div>
+        <div class="portImgContainer">
+            <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap">
+                <img src="assets/ThreeDailyLofi1.png" style="width: 40%" />
+                <img src="assets/ThreeDailyLofi2.png" style="width: 40%" />
+                <img src="assets/ThreeDailyLofi3.png" style="width: 40%" />
             </div>
         </div>
+    </div>
+    <div style="margin-top: 20px; width: 100%">
+        <div class="portImgLabel" style="margin-bottom: 20px">
+            <h2 style="text-align: center">Hi-Fi Mocks</h2>
+            <div class="portImgLabelText"> 
+            </div>  
+        </div>
+        <div class="portImgContainer">
+            <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap">
+                <img src="assets/ThreeDailyHifi1.png" style="width: 40%" />
+                <img src="assets/ThreeDailyHifi2.png" style="width: 40%" />
+                <img src="assets/ThreeDailyHifi3.png" style="width: 40%" />
+            </div>
+        </div>
+    </div>
+       
     </div>
       </main>
         
