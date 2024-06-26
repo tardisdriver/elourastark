@@ -14,19 +14,34 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Press+Start+2P&display=swap"
         rel="stylesheet">
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    const mobileNav = document.querySelector('.mobileNav img');
-    const navOverlay = document.querySelector('.navOverlay');
-    const closeBtn = navOverlay.querySelector('img');
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileNav = document.querySelector('.mobileNav img');
+            const navOverlay = document.querySelector('.navOverlay');
+            const closeBtn = navOverlay.querySelector('img');
 
-    mobileNav.addEventListener('click', function() {
-        navOverlay.style.display = 'flex';
-    });
+            mobileNav.addEventListener('click', function () {
+                navOverlay.style.display = 'flex';
+            });
 
-    closeBtn.addEventListener('click', function() {
-        navOverlay.style.display = 'none';
-    });
-});
+            closeBtn.addEventListener('click', function () {
+                navOverlay.style.display = 'none';
+            });
+        });
+
+        function copyToClipboard(elementId) {
+            const textSpan = document.getElementById(elementId);
+            const text = textSpan.textContent.replace('Email: ', '');
+
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+
+            tempInput.select();
+            document.execCommand('copy');
+
+            document.body.removeChild(tempInput);
+        }
+
 
     </script>
 </head>
@@ -69,34 +84,43 @@
             </div>
         </nav>
     </header>
-      <main>
+    <main>
         <div style="margin-top: 50px;">
             <div>
-              <h1 class="title" style="text-align: center; margin-bottom: 20px;">Let's Get In Touch!</h1>
-              <div
-                style="display: flex;
+                <h1 class="title" style="text-align: center; margin-bottom: 20px;">Let's Get In Touch!</h1>
+                <div style="display: flex;
                   flex-direction: column;
                   align-items: flex-start;
                   gap: 10px;
-                  padding: 20px"
-              >
-                <span>Email: elouras.stark@yahoo.com</span>
-                <span>Phone: 512-790-1612</span>
-                <span>Location: Seattle, WA</span>
-                <div style="margin-top: 60px;">
-                    <b>I am currently available to work</b> so please feel free to contact
-                    me or check out any of my qualifications below:
-                  </div>
-              </div>
-             
-              <div style="display: flex; justify-content: space-between; width: 80%; margin-top: 40px; margin-left: auto; margin-right: auto">
-                <a href="https://www.linkedin.com/in/eloura-stark/" target="_blank"><img src="assets/linkedin.png" class="social"/></a>
-                <a href="https://profile.indeed.com/p/elouraelys-vdmn6yv" target="_blank"><img src="assets/indeed.png" class="social"/></a>
-              </div>
+                  padding: 20px">
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <span>Email: </span><span id="email">eloura.stark@yahoo.com</span><img style="width:15px; cursor: pointer;"
+                            src="assets/copy-regular.svg" onclick="copyToClipboard('email')">
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <span>Phone: </span><span id="phone">512-790-1612</span><img style="width:15px; cursor: pointer;"
+                            src="assets/copy-regular.svg" onclick="copyToClipboard('phone')">
+                    </div>
+
+                    <span>Location: Seattle, WA</span>
+                    <div style="margin-top: 60px;">
+                        <b>I am currently available to work</b> so please feel free to contact
+                        me or check out any of my qualifications below:
+                    </div>
+                </div>
+
+                <div
+                    style="display: flex; justify-content: space-between; width: 80%; margin-top: 40px; margin-left: auto; margin-right: auto">
+                    <a href="https://www.linkedin.com/in/eloura-stark/" target="_blank"><img src="assets/linkedin.png"
+                            class="social" /></a>
+                    <a href="https://profile.indeed.com/p/elouraelys-vdmn6yv" target="_blank"><img
+                            src="assets/indeed.png" class="social" /></a>
+                </div>
             </div>
-          </div>
-      </main>
-        
-        
-    </body>
+        </div>
+    </main>
+
+
+</body>
+
 </html>
